@@ -1,0 +1,8 @@
+<h2>Restaurants</h2>
+<ul class="list-group list-group-flush" *ngFor="let restaurant of restaurants">
+  <li class="list-group-item">
+    {{ restaurant.venue.name }} - {{ restaurant.venue.location.address }},
+    {{ restaurant.venue.location.city }}, {{ restaurant.venue.location.postalCode }},
+    {{ restaurant.venue.location.country }}
+  </li>
+</ul>
